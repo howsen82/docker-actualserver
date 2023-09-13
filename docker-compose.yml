@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  actual:
+    container_name: actual
+    image: jlongster/actual-server:latest
+    volumes:
+      - /data/actual/data:/data
+    ports:
+      - 5007:5006
